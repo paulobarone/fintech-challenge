@@ -13,145 +13,146 @@
   <header class="bg-shape">
     <div class="flex w-full max-w-[360px] justify-between items-center p-6">
       <div class="flex gap-4 items-center cursor-pointer">
-        <i class="fa-solid fa-user text-lg text-darkGray"></i>
+        <img class="w-8 cursor-pointer" src="./images/user-icon.svg" alt="Ícone do usuário" />
         <span class="text-lg text-darkGray">Olá Paulo!</span>
       </div>
-      <i class="fa-solid fa-right-from-bracket text-lg text-darkGray cursor-pointer"></i>
+      <img class="w-8 cursor-pointer" src="./images/exit-icon.svg" alt="Ícone de saída" />
     </div>
   </header>
 
   <main class="bg-[#101010] relative mt-8">
     <section class="flex flex-col h-full w-screen items-center">
-      <div class="flex gap-4 flex-col bg-[#222222] p-4 w-[95%] max-w-[300px] rounded-lg shadow-sm absolute top-[-50px]">
+      <div class="flex gap-4 flex-col bg-[#222222] p-4 w-[95%] max-w-[400px] rounded-lg shadow-sm absolute top-[-50px]">
         <div>
           <span class="uppercase text-lightGray">Seu saldo</span>
           <div class="flex gap-4 items-center">
             <span class="text-lg text-white">R$ 1.718,00</span>
-            <i class="fa-solid fa-eye text-lg text-white cursor-pointer"></i>
+            <img class="w-8 cursor-pointer" src="./images/eye-icon.svg" alt="Ícone de olho para esconder o saldo" />
           </div>
         </div>
         <div class="flex justify-between gap-2">
           <div class="flex items-center justify-center gap-1 cursor-pointer">
-            <img src="./images/add.svg" alt="Adicionar Despesa" class="w-10 h-10 bg-darkGray p-2 rounded-full border-[1px] border-branding border-solid">
+            <img src="./images/add-icon.svg" alt="Adicionar Despesa" class="w-10 h-10 bg-darkGray p-2 rounded-full border-[1px] border-branding border-solid">
             <span class="text-white uppercase text-sm leading-4">Adicionar Despesa</span>
           </div>
           <div class="w-[1px] bg-white"></div>
           <div class="flex items-center justify-center gap-1 cursor-pointer">
-            <img src="./images/add.svg" alt="Adicionar Despesa" class="w-10 h-10 bg-darkGray p-2 rounded-full border-[1px] border-branding border-solid">
+            <img src="./images/extract-icon.svg" alt="Adicionar Despesa" class="w-10 h-10 bg-darkGray p-2 rounded-full border-[1px] border-branding border-solid">
             <span class="text-white uppercase text-sm leading-4">Extrato de Gastos</span>
           </div>
         </div>
       </div>
-      <div class="h-full w-screen p-8 pt-32 gap-4 flex flex-col text-xl items-center">
-        <h1 class="w-full">Transações recentes</h1>
-        <ul class="flex flex-col gap-2">
-          <li class="flex justify-between items-center gap-2">
-            <div class="flex gap-2 items-center">
-              <div class="flex items-center justify-center text-branding w-8 h-8 bg-darkGray p-2 rounded-full border-[1px] border-branding border-solid cursor-pointer">
-                <i class="fa-solid fa-arrow-up"></i>
+      <div class="h-full w-screen p-4 pt-32 flex flex-col text-xl items-center">
+        <div class="flex flex-col items-center w-full max-w-[400px] md:max-w-[600px] gap-6">
+          <h1 class="w-full">Transações recentes</h1>
+          <ul class="flex flex-col gap-2 w-full">
+            <li class="flex justify-between items-center gap-2">
+              <div class="flex gap-2 md:gap-4 items-center">
+                <div class="flex items-center justify-center text-branding bg-darkGray p-1 md:p-2 rounded-full border-[1px] border-branding border-solid cursor-pointer">
+                  <img class="w-8" src="./images/arrow-up-icon.svg" alt="Seta para cima" />
+                </div>
+                <div class="flex flex-col w-full">
+                  <p class="text-white text-xs md:text-lg">Recebimento confirmado</p>
+                  <span class="text-lightGray text-xs md:text-sm">Você recebeu uma transferência</span>
+                </div>
               </div>
-              <div class="flex flex-col">
-                <p class="text-white text-lg">Recebimento confirmado</p>
-                <span class="text-lightGray text-xs">Você recebeu uma transferência</span>
+              <div class="flex flex-col items-end">
+                <span class="text-green text-sm">+ R$55,37</span>
+                <span class="text-white text-sm">11/10</span>
               </div>
-            </div>
-            <div class="flex flex-col w-[150px] items-end">
-              <span class="text-green text-sm">+ R$55,37</span>
-              <span class="text-white text-sm">11/10</span>
-            </div>
-          </li>
-          <li class="flex justify-between items-center gap-2">
-            <div class="flex gap-2 items-center">
-              <div class="flex items-center justify-center text-branding w-8 h-8 bg-darkGray p-2 rounded-full border-[1px] border-branding border-solid cursor-pointer">
-                <i class="fa-solid fa-arrow-down"></i>
+            </li>
+            <li class="flex justify-between items-center gap-2">
+              <div class="flex gap-2 md:gap-4 items-center">
+                <div class="flex items-center justify-center text-branding bg-darkGray p-1 md:p-2 rounded-full border-[1px] border-branding border-solid cursor-pointer">
+                  <img class="w-8" src="./images/arrow-down-icon.svg" alt="Seta para baixo" />
+                </div>
+                <div class="flex flex-col w-full">
+                  <p class="text-white text-xs md:text-lg">Transferência enviada</p>
+                  <span class="text-lightGray text-xs md:text-sm">Você efetuou uma transferência</span>
+                </div>
               </div>
-              <div class="flex flex-col">
-                <p class="text-white text-lg">Transferência enviada</p>
-                <span class="text-lightGray text-xs">Você efetuou uma transferência</span>
+              <div class="flex flex-col items-end">
+                <span class="text-red text-sm">- R$25,00</span>
+                <span class="text-white text-sm">04/10</span>
               </div>
-            </div>
-            <div class="flex flex-col w-[150px] items-end">
-              <span class="text-red text-sm">- R$25,00</span>
-              <span class="text-white text-sm">04/10</span>
-            </div>
-          </li>
-          <li class="flex justify-between items-center gap-2">
-            <div class="flex gap-2 items-center">
-              <div class="flex items-center justify-center text-branding w-8 h-8 bg-darkGray p-2 rounded-full border-[1px] border-branding border-solid cursor-pointer">
-                <i class="fa-solid fa-arrow-up"></i>
+            </li>
+            <li class="flex justify-between items-center gap-2">
+              <div class="flex gap-2 md:gap-4 items-center">
+                <div class="flex items-center justify-center text-branding bg-darkGray p-1 md:p-2 rounded-full border-[1px] border-branding border-solid cursor-pointer">
+                  <img class="w-8" src="./images/arrow-up-icon.svg" alt="Seta para cima" />
+                </div>
+                <div class="flex flex-col w-full">
+                  <p class="text-white text-xs md:text-lg">Recebimento confirmado</p>
+                  <span class="text-lightGray text-xs md:text-sm">Você recebeu uma transferência</span>
+                </div>
               </div>
-              <div class="flex flex-col">
-                <p class="text-white text-lg">Recebimento confirmado</p>
-                <span class="text-lightGray text-xs">Você recebeu uma transferência</span>
+              <div class="flex flex-col items-end">
+                <span class="text-green text-sm">+ R$27,03</span>
+                <span class="text-white text-sm">22/09</span>
               </div>
-            </div>
-            <div class="flex flex-col w-[150px] items-end">
-              <span class="text-green text-sm">+ R$27,03</span>
-              <span class="text-white text-sm">22/09</span>
-            </div>
-          </li>
-          <li class="flex justify-between items-center gap-2">
-            <div class="flex gap-2 items-center">
-              <div class="flex items-center justify-center text-branding w-8 h-8 bg-darkGray p-2 rounded-full border-[1px] border-branding border-solid cursor-pointer">
-                <i class="fa-solid fa-arrow-up"></i>
+            </li>
+            <li class="flex justify-between items-center gap-2">
+              <div class="flex gap-2 md:gap-4 items-center">
+                <div class="flex items-center justify-center text-branding bg-darkGray p-1 md:p-2 rounded-full border-[1px] border-branding border-solid cursor-pointer">
+                  <img class="w-8" src="./images/arrow-up-icon.svg" alt="Seta para cima" />
+                </div>
+                <div class="flex flex-col w-full">
+                  <p class="text-white text-xs md:text-lg">Recebimento confirmado</p>
+                  <span class="text-lightGray text-xs md:text-sm">Você recebeu uma transferência</span>
+                </div>
               </div>
-              <div class="flex flex-col">
-                <p class="text-white text-lg">Recebimento confirmado</p>
-                <span class="text-lightGray text-xs">Você recebeu uma transferência</span>
+              <div class="flex flex-col items-end">
+                <span class="text-green text-sm">+ R$32,33</span>
+                <span class="text-white text-sm">10/09</span>
               </div>
-            </div>
-            <div class="flex flex-col w-[150px] items-end">
-              <span class="text-green text-sm">+ R$32,33</span>
-              <span class="text-white text-sm">10/09</span>
-            </div>
-          </li>
-          <li class="flex justify-between items-center gap-2">
-            <div class="flex gap-2 items-center">
-              <div class="flex items-center justify-center text-branding w-8 h-8 bg-darkGray p-2 rounded-full border-[1px] border-branding border-solid cursor-pointer">
-                <i class="fa-solid fa-arrow-down"></i>
+            </li>
+            <li class="flex justify-between items-center gap-2">
+              <div class="flex gap-2 md:gap-4 items-center">
+                <div class="flex items-center justify-center text-branding bg-darkGray p-1 md:p-2 rounded-full border-[1px] border-branding border-solid cursor-pointer">
+                  <img class="w-8" src="./images/arrow-down-icon.svg" alt="Seta para baixo" />
+                </div>
+                <div class="flex flex-col w-full">
+                  <p class="text-white text-xs md:text-lg">Transferência enviada</p>
+                  <span class="text-lightGray text-xs md:text-sm">Você efetuou uma transferência</span>
+                </div>
               </div>
-              <div class="flex flex-col">
-                <p class="text-white text-lg">Transferência enviada</p>
-                <span class="text-lightGray text-xs">Você efetuou uma transferência</span>
+              <div class="flex flex-col items-end">
+                <span class="text-red text-sm">- R$12,00</span>
+                <span class="text-white text-sm">04/09</span>
               </div>
-            </div>
-            <div class="flex flex-col w-[150px] items-end">
-              <span class="text-red text-sm">- R$12,00</span>
-              <span class="text-white text-sm">04/09</span>
-            </div>
-          </li>
-          <li class="flex justify-between items-center gap-2">
-            <div class="flex gap-2 items-center">
-              <div class="flex items-center justify-center text-branding w-8 h-8 bg-darkGray p-2 rounded-full border-[1px] border-branding border-solid cursor-pointer">
-                <i class="fa-solid fa-arrow-down"></i>
+            </li>
+            <li class="flex justify-between items-center gap-2">
+              <div class="flex gap-2 md:gap-4 items-center">
+                <div class="flex items-center justify-center text-branding bg-darkGray p-1 md:p-2 rounded-full border-[1px] border-branding border-solid cursor-pointer">
+                  <img class="w-8" src="./images/arrow-down-icon.svg" alt="Seta para baixo" />
+                </div>
+                <div class="flex flex-col w-full">
+                  <p class="text-white text-xs md:text-lg">Transferência enviada</p>
+                  <span class="text-lightGray text-xs md:text-sm">Você efetuou uma transferência</span>
+                </div>
               </div>
-              <div class="flex flex-col">
-                <p class="text-white text-lg">Transferência enviada</p>
-                <span class="text-lightGray text-xs">Você efetuou uma transferência</span>
+              <div class="flex flex-col items-end">
+                <span class="text-red text-sm">- R$18,00</span>
+                <span class="text-white text-sm">01/09</span>
               </div>
-            </div>
-            <div class="flex flex-col w-[150px] items-end">
-              <span class="text-red text-sm">- R$18,00</span>
-              <span class="text-white text-sm">01/09</span>
-            </div>
-          </li>
-        </ul>
-        <button class="bg-branding p-2 w-[150px] text-sm rounded-md">Ver mais</button>
+            </li>
+          </ul>
+          <button class="bg-branding p-2 w-[150px] text-sm rounded-md">Ver mais</button>
+        </div>
       </div>
     </section>
   </main>
   <footer class="flex gap-4 items-center justify-center bg-darkGray border-t-[1px] p-4 border-solid border-branding">
-    <div class="flex items-center justify-center w-12 h-12 p-4 border-[2px] border-branding border-solid rounded-full cursor-pointer">
-      <i class="fa-solid fa-dollar-sign text-branding text-xl"></i>
+    <div class="flex items-center justify-center p-2 md:p-4 border-[2px] border-branding border-solid rounded-full cursor-pointer">
+      <img src="./images/dollar-icon.svg" alt="Ícone de dólar" />
     </div>
-    <div class="flex items-center justify-center bg-branding w-12 h-12 p-4 border-[2px] border-branding border-solid rounded-full cursor-pointer">
-      <i class="fa-solid fa-house text-black text-xl"></i>
+    <div class="flex items-center justify-center bg-branding p-2 md:p-4 border-[2px] border-branding border-solid rounded-full cursor-pointer">
+      <img src="./images/home-icon.svg" alt="Ícone de casa" />
     </div>
-    <div class="flex items-center justify-center w-12 h-12 p-4 border-[2px] border-branding border-solid rounded-full cursor-pointer">
-      <i class="fa-solid fa-calendar-days text-branding text-xl"></i>
+    <div class="flex items-center justify-center p-2 md:p-4 border-[2px] border-branding border-solid rounded-full cursor-pointer">
+      <img src="./images/calender-icon.svg" alt="Ícone de calendário" />
     </div>
   </footer>
-  <script src="https://kit.fontawesome.com/2a00cbc7e1.js" crossorigin="anonymous"></script>
   <script src="./script/tailwindConfig.js"></script>
 </body>
 </html>
